@@ -26,7 +26,7 @@ const Header = () => {
           <span className="text-2xl md:text-3xl font-extrabold text-white">
             Oneway<span className="text-yellow-400">DropTaxi</span>
           </span>
-          <p className="text-sm md:text-base text-gray-300">Safe. Fast. Reliable Rides</p>
+          <p className="text-sm md:text-base text-gray-300">Simple Booking. Transparent Pricing.</p>
         </div>
       </motion.div>
 
