@@ -99,15 +99,20 @@ const Header = () => {
               }
               className="text-gray-800 font-medium py-1"
               onClick={() => setIsMenuOpen(false)}
-            >
+              >
               {item}
             </Link>
           ))}
 
-         <div className="flex items-center bg-white/90 px-3 py-2 rounded-lg mt-2">
-         <Phone className="h-4 w-4 text-yellow-500 mr-2" />
-        <span className="text-yellow-600 font-semibold">+91 6382980204</span>
-        </div>
+          <motion.div
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{ duration: 0.9, repeat: Infinity }}
+          className="flex items-center bg-yellow-500 text-black font-semibold px-3 py-2 rounded-lg mt-2 shadow"
+          >
+          <Phone className="h-4 w-4 text-black mr-2" />
+          <span className="font-semibold">+91 6382980204</span>
+        </motion.div>
+         
           
         </nav>
       </motion.div>
