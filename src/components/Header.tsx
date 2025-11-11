@@ -18,10 +18,10 @@ const Header = () => {
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col md:flex-row items-center space-x-3 cursor-pointer"
+        className="flex flex-col md:flex-row items-center space-x-4 cursor-pointer"
         onClick={() => (window.location.href = "/")}
       >
-        <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-16 w-auto"  />
+        <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-12 sm:h-14 md:h-16 w-auto object-contain" loading="lazy"  />
         <div>
           <span className="text-2xl md:text-3xl font-extrabold text-gray-900">
             Oneway<span className="text-yellow-600">DropTaxi</span>
