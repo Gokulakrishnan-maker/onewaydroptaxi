@@ -68,12 +68,6 @@ const Header = () => {
       </motion.a>
 
       {/* Mobile Menu Button */}
-      <a
-      href="tel:+916382980204"
-      className="md:hidden flex items-center bg-yellow-500 text-black font-semibold px-3 py-2 rounded-full shadow hover:bg-yellow-600 transition"
-      >
-     <Phone className="h-5 w-5" />
-     </a>
       <button
         className="md:hidden p-2 ml-2 rounded-lg hover:bg-gray-100 transition"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -109,11 +103,19 @@ const Header = () => {
               {item}
             </Link>
           ))}
+
+          <a
+         href="tel:+916382980204"
+         className="md:hidden flex items-center bg-yellow-500 text-black font-semibold px-3 py-2 rounded-full shadow hover:bg-yellow-600 transition"
+         >
+         <Phone className="h-5 w-5" />
+         </a>
+          
         </nav>
       </motion.div>
     )}
   </AnimatePresence>
-</header>
+  </header>
   );
 };
 
