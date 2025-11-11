@@ -21,7 +21,7 @@ const Header = () => {
         className="flex flex-col md:flex-row items-center space-x-4 cursor-pointer"
         onClick={() => (window.location.href = "/")}
       >
-        <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-24 sm:h-20 md:h-16 lg:h-14 w-auto object-contain" loading="lazy"  />
+        <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-24 sm:h-20 md:h-16 lg:h-12 w-auto object-contain" loading="lazy"  />
         <div>
           <span className="text-2xl md:text-3xl font-extrabold text-gray-900">
             Oneway<span className="text-yellow-600">DropTaxi</span>
