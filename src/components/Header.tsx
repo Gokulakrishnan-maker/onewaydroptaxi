@@ -21,10 +21,10 @@ const Header = () => {
             className="flex flex-col md:flex-row items-center space-x-3 cursor-pointer"
             onClick={() => (window.location.href = "/")}
           >
-            <img src="/logo5.png" alt="FastrideDropTaxi" className="h-16 w-auto" />
+            <img src="/logo5.png" alt="OnewayDropTaxi" className="h-16 w-auto" />
             <div>
               <span className="text-2xl md:text-3xl font-extrabold text-black">
-                Fastride<span className="text-black">DropTaxi</span>
+                Oneway<span className="text-black">DropTaxi</span>
               </span>
               <p className="text-sm md:text-base text-gray-800">Safe. Fast. Reliable Rides</p>
             </div>
