@@ -415,30 +415,99 @@ ${booking.customerEmail ? `• Email: ${booking.customerEmail}` : ''}
 📞 *Contact:* +91 6382980204`;
 };
 
-export const getTeamWhatsAppEnquiryUrl = (booking: BookingEnquiry): string => {
-  return `https://wa.me/916382980204?text=${formatWhatsAppEnquiryMessage(booking)}`;
+// Send WhatsApp enquiry notification
+export const sendWhatsAppEnquiryNotification = async (booking: BookingEnquiry): Promise<void> => {
+  const message = formatWhatsAppEnquiryMessage(booking);
+  const whatsappUrl = `https://wa.me/916382980204?text=${message}`;
+  
+  console.log('📱 Sending WhatsApp enquiry notification...');
+  console.log('📱 WhatsApp URL prepared for Fastridedroptaxi team');
+  
+  // Open WhatsApp to send enquiry notification to Fastridedroptaxi team
+  try {
+    // Open WhatsApp in new tab to send enquiry to Fastridedroptaxi team
+    window.open(whatsappUrl, '_blank');
+    console.log('✅ WhatsApp enquiry notification opened for +91 6382980204');
+  } catch (error) {
+    console.error('❌ Error sending WhatsApp enquiry notification:', error);
+  }
 };
-
 
 // Send WhatsApp enquiry notification to customer
-export const getCustomerWhatsAppEnquiryUrl = (booking: BookingEnquiry): string => {
-  const phone = booking.customerPhone?.replace(/\D/g, '') ?? '';
-  const formattedPhone = phone.startsWith('91') ? phone : `91${phone}`;
-  return `https://wa.me/${formattedPhone}?text=${formatCustomerWhatsAppEnquiryMessage(booking)}`;
-};
+export const sendCustomerWhatsAppEnquiryNotification = async (booking: BookingEnquiry): Promise<void> => {
+  if (!booking.customerPhone) {
+    console.log('⚠️ No customer phone number provided for WhatsApp notification');
+    return;
+  }
 
+  const message = formatCustomerWhatsAppEnquiryMessage(booking);
+  const customerPhone = booking.customerPhone.replace(/\D/g, ''); // Remove non-digits
+  const formattedPhone = customerPhone.startsWith('91') ? customerPhone : `91${customerPhone}`;
+  const whatsappUrl = `https://wa.me/${formattedPhone}?text=${message}`;
+  
+  console.log('📱 Sending WhatsApp enquiry notification to customer...');
+  console.log('📱 Customer phone:', formattedPhone);
+  
+  try {
+    // Open WhatsApp to send enquiry confirmation to customer
+    window.open(whatsappUrl, '_blank');
+    console.log('✅ WhatsApp enquiry notification opened for customer:', formattedPhone);
+  } catch (error) {
+    console.error('❌ Error sending customer WhatsApp enquiry notification:', error);
+  }
+};
 // Send WhatsApp confirmation notification
-export const getTeamWhatsAppConfirmationUrl = (booking: BookingEnquiry): string => {
-  return `https://wa.me/916382980204?text=${formatWhatsAppConfirmationMessage(booking)}`;
+export const sendWhatsAppConfirmationNotification = async (booking: BookingEnquiry): Promise<void> => {
+  const message = formatWhatsAppConfirmationMessage(booking);
+  const whatsappUrl = `https://wa.me/916382980204?text=${message}`;
+  
+  console.log('📱 Sending WhatsApp confirmation notification...');
+  console.log('📱 WhatsApp URL prepared for Fastridedroptaxi team');
+  
+  // Open WhatsApp to send confirmation notification to Fastridedroptaxi team
+  try {
+    // Open business WhatsApp first
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      console.log('✅ Business WhatsApp tab opened successfully');
+    }, 500);
+    
+    console.log('✅ WhatsApp confirmation notification opened for +91 6382980204');
+  } catch (error) {
+    console.error('❌ Error sending WhatsApp confirmation notification:', error);
+  }
 };
 
 // Send WhatsApp confirmation notification to customer
-export const getCustomerWhatsAppConfirmationUrl = (booking: BookingEnquiry): string => {
-  const phone = booking.customerPhone?.replace(/\D/g, '') ?? '';
-  const formattedPhone = phone.startsWith('91') ? phone : `91${phone}`;
-  return `https://wa.me/${formattedPhone}?text=${formatCustomerWhatsAppConfirmationMessage(booking)}`;
-};
+export const sendCustomerWhatsAppConfirmationNotification = async (booking: BookingEnquiry): Promise<void> => {
+  if (!booking.customerPhone) {
+    console.error('⚠️ No customer phone number provided for WhatsApp notification');
+    return Promise.reject(new Error('No customer phone number provided'));
+  }
 
+  const message = formatCustomerWhatsAppConfirmationMessage(booking);
+  const customerPhone = booking.customerPhone.replace(/\D/g, ''); // Remove non-digits
+  const formattedPhone = customerPhone.startsWith('91') ? customerPhone : `91${customerPhone}`;
+  const whatsappUrl = `https://wa.me/${formattedPhone}?text=${message}`;
+  
+  console.log('📱 Sending WhatsApp confirmation notification to customer...');
+  console.log('📱 Customer phone:', formattedPhone);
+  console.log('📱 WhatsApp URL:', whatsappUrl);
+  
+  try {
+    // Add small delay to ensure business WhatsApp opens first
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      console.log('✅ Customer WhatsApp tab opened successfully');
+    }, 1000);
+    
+    console.log('✅ WhatsApp confirmation notification opened for customer:', formattedPhone);
+    return Promise.resolve();
+  } catch (error) {
+    console.error('❌ Error sending customer WhatsApp confirmation notification:', error);
+    return Promise.reject(error);
+  }
+};
 // Send enquiry notifications (email via backend + WhatsApp)
 export const sendBookingEnquiryNotifications = async (booking: BookingEnquiry): Promise<void> => {
   console.log('📧 Starting booking enquiry notifications...', {
@@ -531,11 +600,8 @@ export const sendBookingConfirmationNotifications = async (booking: BookingEnqui
     
     // Send WhatsApp confirmation notification
     console.log('📱 Sending WhatsApp confirmation notification...');
-    const teamWhatsappUrl = getTeamWhatsAppConfirmationUrl(booking);
-    const customerWhatsappUrl = getCustomerWhatsAppConfirmationUrl(booking);
-
-    console.log("👉 WhatsApp for Team:", teamWhatsappUrl);
-    console.log("👉 WhatsApp for Customer:", customerWhatsappUrl);
+    await sendWhatsAppConfirmationNotification(booking);
+    await sendCustomerWhatsAppConfirmationNotification(booking);
     
     // Show status to user
     if (emailSent || telegramSent) {
