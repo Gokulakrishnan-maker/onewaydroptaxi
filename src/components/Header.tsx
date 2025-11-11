@@ -104,12 +104,10 @@ const Header = () => {
             </Link>
           ))}
 
-          <a
-         href="tel:+916382980204"
-         className="md:hidden flex items-center bg-yellow-500 text-black font-semibold px-3 py-2 rounded-full shadow hover:bg-yellow-600 transition"
-         >
-         <Phone className="h-5 w-5" />
-         </a>
+         <div className="flex items-center bg-white/90 px-3 py-2 rounded-lg mt-2">
+         <Phone className="h-4 w-4 text-yellow-500 mr-2" />
+        <span className="text-yellow-600 font-semibold">+91 6382980204</span>
+        </div>
           
         </nav>
       </motion.div>
