@@ -9,61 +9,56 @@ const Header = () => {
  const navItems = ["Home", "About", "Services", "Fleet", "Pricing", "Contact"];
 
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 relative">
+    <header className="sticky top-0 z-50 bg-black shadow-lg border-b border-yellow-500/40">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center py-4 relative">
 
-          {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col md:flex-row items-center space-x-3 cursor-pointer"
-            onClick={() => (window.location.href = "/")}
-          >
-            <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-16 w-auto"  />
-            <div>
-              <span className="text-2xl md:text-3xl font-extrabold text-black">
-                Oneway<span className="text-black">DropTaxi</span>
-              </span>
-              <p className="text-sm md:text-base text-gray-800">Safe. Fast. Reliable Rides</p>
-            </div>
+      {/* Logo + Name */}
+      <motion.div
+        initial={{ opacity: 0, x: -40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col md:flex-row items-center space-x-3 cursor-pointer"
+        onClick={() => (window.location.href = "/")}
+      >
+        <img src="/logo6.webp" alt="OnewayDropTaxi" className="h-12 w-auto object-contain drop-shadow-lg" />
+        <div>
+          <span className="text-2xl md:text-3xl font-extrabold text-white">
+            Oneway<span className="text-yellow-400">DropTaxi</span>
+          </span>
+          <p className="text-sm md:text-base text-gray-300">Safe. Fast. Reliable Rides</p>
+        </div>
+      </motion.div>
+
+      {/* Desktop Menu */}
+      <nav className="hidden md:flex space-x-6 items-center">
+        {navItems.map((item, i) => (
+          <motion.div key={item} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1, duration: 0.3 }}>
+            <Link
+              to={
+                item === "Home" ? "/" :
+                item === "About" ? "/about" :
+                item === "Pricing" ? "/pricing" :
+                item === "Contact" ? "/contact" :
+                `#${item.toLowerCase()}`
+              }
+              className="text-white font-medium hover:text-yellow-400 transition-all hover:scale-105"
+            >
+              {item}
+            </Link>
           </motion.div>
+        ))}
+      </nav>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-6 items-center">
-            {navItems.map((item, i) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1, duration: 0.3 }}
-              >
-                <Link
-                  to={
-                    item === "Home" ? "/" :
-                    item === "About" ? "/about" :
-                    item === "Pricing" ? "/pricing" :
-                    item === "Contact" ? "/contact" :
-                    `#${item.toLowerCase()}` // scroll for others
-                  }
-                  className="text-black font-medium hover:text-white transition-all hover:scale-105"
-                >
-                  {item}
-                </Link>
-              </motion.div>
-            ))}
-          </nav>
-
-          {/* Phone Box */}
-          <motion.div
-            className="hidden md:flex items-center ml-6 bg-white/90 px-3 py-2 rounded-lg cursor-pointer hover:bg-white transition"
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <Phone className="h-4 w-4 text-yellow-500 mr-2" />
-            <span className="text-yellow-600 font-semibold">+91 6382980204</span>
-          </motion.div>
+      {/* Call Button */}
+      <motion.div
+        className="hidden md:flex items-center ml-6 bg-yellow-500 text-black font-bold px-4 py-2 rounded-lg cursor-pointer shadow-md hover:bg-yellow-400 transition"
+        animate={{ scale: [1, 1.08, 1] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        <Phone className="h-4 w-4 mr-2" />
+        +91 6382980204
+      </motion.div>
 
           {/* Mobile Menu Toggle */}
           <button
