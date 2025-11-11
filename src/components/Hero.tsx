@@ -8,14 +8,9 @@ import {
   sendBookingEnquiryNotifications, 
   sendBookingConfirmationNotifications, 
   BookingEnquiry, 
-  generateBookingId,
-  formatWhatsAppConfirmationMessage,
-  getTeamWhatsAppEnquiryUrl,
-  getCustomerWhatsAppEnquiryUrl,
-  getTeamWhatsAppConfirmationUrl,
-  getCustomerWhatsAppConfirmationUrl
+  generateBookingId, 
+  formatWhatsAppConfirmationMessage 
 } from '../utils/notifications';
-
 
 const Hero = () => {
   const [bookingForm, setBookingForm] = useState({
@@ -208,21 +203,10 @@ const Hero = () => {
 
                 console.log('📧📱 Auto-sending enquiry notifications (Email + WhatsApp)...');
                 sendBookingEnquiryNotifications(enquiryData).then(() => {
-                console.log("✅ Email + Telegram sent");
-
-               // ✅ Now open WhatsApp without popup blocking
-               const teamUrl = getTeamWhatsAppEnquiryUrl(enquiryData);
-               window.open(teamUrl, "_blank");
-
-              // Optionally send WhatsApp to customer too
-              if (enquiryData.customerPhone) {
-              const customerUrl = getCustomerWhatsAppEnquiryUrl(enquiryData);
-              window.open(customerUrl, "_blank");
-              }
-
-             alert("📧📱 Enquiry sent! Check WhatsApp.");
-             }).catch(console.error);
-
+                  console.log('✅ Enquiry sent to Fastridedroptaxi team via Email + WhatsApp + Telegram');
+                  // Show user feedback
+                  alert('📧📱 Booking enquiry sent! Fastridedroptaxi team has been notified via Email, WhatsApp & Telegram and will contact you shortly.');
+                }).catch(console.error);
                 
                 setShowEstimation(true);
               }
@@ -250,45 +234,68 @@ const Hero = () => {
     }
   };
 
- const handleConfirmBooking = async () => {
-  const confirmationBookingId = generateBookingId();
+  const handleConfirmBooking = () => {
+    const confirmationBookingId = generateBookingId();
+    
+    const bookingData: BookingEnquiry = {
+      tripType: bookingForm.tripType,
+      from: bookingForm.from,
+      to: bookingForm.to,
+      date: bookingForm.date,
+      time: bookingForm.time,
+      passengers: bookingForm.passengers,
+      fareEstimate: tripDetails?.fare,
+      bookingId: confirmationBookingId,
+      vehicleType: tripDetails?.selectedCar || selectedVehicle,
+      customerName: bookingForm.customerName,
+      customerPhone: bookingForm.customerPhone,
+      customerEmail: bookingForm.customerEmail,
+      tripDistance: tripDetails?.distance || 'To be calculated',
+      tripDuration: tripDetails?.duration || 'To be calculated',
+      vehicleRate: tripDetails?.vehicleRate || 14,
+      driverAllowance: tripDetails?.driverAllowance || 400
+    };
 
-  const bookingData: BookingEnquiry = {
-    tripType: bookingForm.tripType,
-    from: bookingForm.from,
-    to: bookingForm.to,
-    date: bookingForm.date,
-    time: bookingForm.time,
-    passengers: bookingForm.passengers,
-    fareEstimate: tripDetails?.fare,
-    bookingId: confirmationBookingId,
-    vehicleType: tripDetails?.selectedCar || selectedVehicle,
-    customerName: bookingForm.customerName,
-    customerPhone: bookingForm.customerPhone,
-    customerEmail: bookingForm.customerEmail,
-    tripDistance: tripDetails?.distance,
-    tripDuration: tripDetails?.duration,
-    vehicleRate: tripDetails?.vehicleRate,
-    driverAllowance: tripDetails?.driverAllowance
+    // Set success state immediately
+    setSuccessBookingData(bookingData);
+    setShowSuccessMessage(true);
+    setShowEstimation(false);
+
+    console.log('📧 Auto-sending confirmation notifications...');
+    
+    // Send business notifications (Email + Telegram + WhatsApp to business)
+    sendBookingConfirmationNotifications(bookingData).then(() => {
+      console.log('✅ Business confirmation notifications sent');
+    }).catch(console.error);
+    
+    // Send customer WhatsApp confirmation with proper timing
+    if (bookingData.customerPhone) {
+      console.log('📱 Sending customer WhatsApp confirmation...');
+      
+      // First send business WhatsApp (immediate)
+      setTimeout(() => {
+        const businessMessage = formatWhatsAppConfirmationMessage(bookingData);
+        const businessWhatsAppUrl = `https://wa.me/916382980204?text=${businessMessage}`;
+        window.open(businessWhatsAppUrl, '_blank');
+        console.log('✅ Business WhatsApp tab opened');
+        
+        // Then send customer WhatsApp (after 1 second)
+        setTimeout(() => {
+          const customerMessage = formatCustomerWhatsAppConfirmationMessage(bookingData);
+          const customerPhone = bookingData.customerPhone!.replace(/\D/g, '');
+          const businessWhatsAppUrl = `https://wa.me/916382980204?text=${businessMessage}`;
+          const customerWhatsAppUrl = `https://wa.me/${formattedPhone}?text=${encodeURIComponent(customerMessage)}`;
+
+          
+          window.open(customerWhatsAppUrl, '_blank');
+          console.log('✅ Customer WhatsApp tab opened for:', formattedPhone);
+          console.log('📱 Customer will receive booking confirmation on WhatsApp');
+        }, 1000);
+      }, 500);
+    } else {
+      console.log('⚠️ No customer phone provided for WhatsApp');
+    }
   };
-
-  // Update UI immediately
-  setSuccessBookingData(bookingData);
-  setShowSuccessMessage(true);
-  setShowEstimation(false);
-
-  console.log('📧 Sending confirmation Email + Telegram...');
-  await sendBookingConfirmationNotifications(bookingData); // ✅ Email + Telegram only (no WhatsApp here)
-
-  // ✅ WhatsApp links (No popup blocker)
-  const teamUrl = getTeamWhatsAppConfirmationUrl(bookingData);
-  window.open(teamUrl, "_blank"); // Open business WhatsApp safely
-
-  if (bookingData.customerPhone) {
-    const customerUrl = getCustomerWhatsAppConfirmationUrl(bookingData);
-    setTimeout(() => window.open(customerUrl, "_blank"), 800); // Open customer's WhatsApp after small delay
-  }
-};
 
   const handleGoHome = () => {
     setShowSuccessMessage(false);
