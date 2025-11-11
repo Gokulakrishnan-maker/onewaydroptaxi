@@ -22,7 +22,7 @@ const Header = () => {
         onClick={() => (window.location.href = "/")}
       >
         <img
-          src="/logo-512.webp"
+          src="/logo6.webp"
           alt="OnewayDropTaxi"
           className="h-[72px] sm:h-[78px] md:h-[90px] lg:h-[80px] w-auto object-contain"
         />
