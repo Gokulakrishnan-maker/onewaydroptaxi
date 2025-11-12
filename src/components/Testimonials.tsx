@@ -4,44 +4,44 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-     name: 'Sumathi',
+     name: 'Suganthi',
      role: 'Chennai to Madurai',
      emoji: '👩',
      rating: 5,
-     text: 'Fastridedroptaxi has been my go-to taxi service for business trips. Always punctual, professional drivers, and clean vehicles. Highly recommended!'
+     text: 'Onewaydroptaxi has been my go-to taxi service for business trips. Always punctual, professional drivers, and clean vehicles. Highly recommended!'
    },
 
     {
-     name: 'Murugavelu',
+     name: 'Vinay kumar',
      role: 'Coimbatore to Salem',
      emoji: '👨',
      rating: 5,
-     text: 'Fastridedroptaxi provides excellent service! The drivers are courteous and knowledgeable about the city. The booking system is seamless and pricing is very fair.'
+     text: 'Onewaydroptaxi provides excellent service! The drivers are courteous and knowledgeable about the city. The booking system is seamless and pricing is very fair.'
     },
     
     {
-     name: 'Kavitha',
+     name: 'Kavitha Lakshmi',
      role: 'Trichy to Chennai',
      emoji: '👩',
      rating: 5,
-     text: 'Safe, reliable, and comfortable rides every time. I feel secure traveling with Fastridedroptaxi, especially during late night trips.'
+     text: 'Safe, reliable, and comfortable rides every time. I feel secure traveling with Onewaydroptaxi, especially during late night trips.'
     },
     {
-      name: 'Ramesh Kumar',
+      name: 'Mohan kumar',
       role: 'Madurai to Kanyakumari',
       emoji: '👨',
       rating: 5,
       text: 'Their punctuality and clean cars make my airport trips stress-free. Excellent service every single time!'
      },
     {
-    name: 'priyanka',
+    name: 'priyadharshini',
     role: 'Salem to Coimbatore',
     emoji: '👩',
     rating: 5,
-    text: 'Friendly drivers and smooth rides. I always choose Fastridedroptaxi for outstation and city travel!'
+    text: 'Friendly drivers and smooth rides. I always choose Onewaydroptaxi for outstation and city travel!'
     },
     {
-      name: 'Meera kannan',
+      name: 'Meera Nataraj',
       role: 'Madurai to Coimbatore',
       emoji: '👩',
       rating: 5,
@@ -55,7 +55,7 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about their Fastridedroptaxi experience.
+            Don't just take our word for it. Here's what our satisfied customers have to say about their Onewaydroptaxi experience.
           </p>
         </div>
 
