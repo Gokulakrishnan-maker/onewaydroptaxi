@@ -13,7 +13,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-console.log('🚀 Starting Fastridedroptaxi Email Server...');
+console.log('🚀 Starting Onewaydroptaxi Email Server...');
 console.log('📧 Email User:', process.env.EMAIL_USER || 'NOT SET');
 console.log('🔑 Email Pass:', process.env.EMAIL_PASS ? 'SET' : 'NOT SET');
 
@@ -174,13 +174,13 @@ app.get('/api/test-email', async (req, res) => {
     console.log('🧪 Testing email configuration...');
     
     const testMailOptions = {
-      from: `Fastridedroptaxi System <${process.env.EMAIL_USER}>`,
-      to: 'fastridedroptaxi.booking@gmail.com',
+      from: `Onewaydroptaxi System <${process.env.EMAIL_USER}>`,
+      to: 'onewaydroptaxibooking7@gmail.com',
       subject: 'Test Email - Fastridedroptaxi System',
       text: 'This is a test email to verify the email system is working correctly.',
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2 style="color: #1e40af;">🚖 Fastridedroptaxi Email Test</h2>
+          <h2 style="color: #1e40af;">🚖 Onewaydroptaxi Email Test</h2>
           <p>This is a test email to verify the email system is working correctly.</p>
           <p><strong>Time:</strong> ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</p>
           <p style="color: #10b981;"><strong>✅ Email system is functioning properly!</strong></p>
@@ -194,7 +194,7 @@ app.get('/api/test-email', async (req, res) => {
     res.status(200).send(`
       <html>
         <head>
-          <title>Fastridedroptaxi Email Test</title>
+          <title>Onewaydroptaxi Email Test</title>
           <style>
             body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
             .success { background: #d1fae5; border: 2px solid #10b981; padding: 20px; border-radius: 10px; }
@@ -205,7 +205,7 @@ app.get('/api/test-email', async (req, res) => {
           </style>
         </head>
         <body>
-          <h1>🚖 Fastridedroptaxi Email Test</h1>
+          <h1>🚖 Onewaydroptaxi Email Test</h1>
           <div class="success">
             <h2>✅ Test Email Sent Successfully!</h2>
             <p><strong>Message ID:</strong> ${info.messageId}</p>
@@ -215,8 +215,8 @@ app.get('/api/test-email', async (req, res) => {
           <div class="info">
             <h3>📧 Email Details:</h3>
             <p><strong>From:</strong> ${process.env.EMAIL_USER}</p>
-            <p><strong>To:</strong> fastridedroptaxi.booking@gmail.com</p>
-            <p><strong>Subject:</strong> Test Email - Fastridedroptaxi System</p>
+            <p><strong>To:</strong> onewaydroptaxibooking7@gmail.com</p>
+            <p><strong>Subject:</strong> Test Email - Onewaydroptaxi System</p>
           </div>
           <a href="/" class="back-btn">← Back to Website</a>
         </body>
@@ -228,7 +228,7 @@ app.get('/api/test-email', async (req, res) => {
     res.status(500).send(`
       <html>
         <head>
-          <title>Fastridedroptaxi Email Test - Error</title>
+          <title>Onewaydroptaxi Email Test - Error</title>
           <style>
             body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
             .error { background: #fee2e2; border: 2px solid #ef4444; padding: 20px; border-radius: 10px; }
@@ -319,10 +319,10 @@ app.post('/api/send-booking-email', async (req, res) => {
 
     const isEnquiry = status === 'ENQUIRY';
     const statusText = isEnquiry ? 'BOOKING ENQUIRY' : 'CONFIRMED BOOKING';
-    const emailSubject = `${statusText} - Fastridedroptaxi - ID: ${bookingId} - ${customerName}`;
+    const emailSubject = `${statusText} - Onewaydroptaxi - ID: ${bookingId} - ${customerName}`;
   
     
-    const emailBody = `${statusText} - Fastridedroptaxi Website
+    const emailBody = `${statusText} - Onewaydroptaxi Website
 
 Booking ID: ${bookingId}
 Customer: ${customerName} (${customerPhone})
@@ -351,15 +351,15 @@ Booking Time: ${currentDateTime}
 Contact: +91 74183 32789`;
 
     const mailOptions = {
-      from: `Fastridedroptaxi Booking <${process.env.EMAIL_USER}>`,
-      to: 'fastridedroptaxi.booking@gmail.com',
+      from: `Onewaydroptaxi Booking <${process.env.EMAIL_USER}>`,
+      to: 'onewaydroptaxibooking7@gmail.com',
       subject: emailSubject,
       text: emailBody,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
           <div style="background-color: ${isEnquiry ? '#f59e0b' : '#10b981'}; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
             <h1 style="margin: 0; font-size: 24px;">🚖 ${statusText}</h1>
-            <p style="margin: 5px 0 0 0; opacity: 0.9;">Fastridedroptaxi Website Booking</p>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">Onewaydroptaxi Website Booking</p>
           </div>
           
           <div style="background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -407,8 +407,8 @@ Contact: +91 74183 32789`;
 
             <div style="text-align: center; color: #6b7280; font-size: 14px;">
               <p>Booking Time: ${currentDateTime}</p>
-              <p>Contact: +91 7305470462</p>
-              <p>www.Fastridedroptaxi.com</p>
+              <p>Contact: +91 </p>
+              <p>www.Onewaydroptaxi.com</p>
             </div>
           </div>
         </div>
@@ -483,19 +483,19 @@ Enquiry Time: ${currentDateTime}
 
 Please respond to the customer promptly.
 
-Contact: +91 90875 20500
-www.happyridedroptaxi.com`;
+Contact: +91 
+www.Onewaydroptaxi.com`;
 
     const mailOptions = {
-      from: ` Contact Fastridedroptaxi <${process.env.EMAIL_USER}>`,
-      to: 'fastridedroptaxi.booking@gmail.com',
+      from: ` Contact Onewaydroptaxi <${process.env.EMAIL_USER}>`,
+      to: 'onewaydroptaxibooking7@gmail.com',
       subject: emailSubject,
       text: emailBody,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
           <div style="background-color: #1e40af; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
             <h1 style="margin: 0; font-size: 24px;">📞 Contact Form Enquiry</h1>
-            <p style="margin: 5px 0 0 0; opacity: 0.9;">1waytaxi Website</p>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">Onewaydroptaxi Website</p>
           </div>
           
           <div style="background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -517,8 +517,8 @@ www.happyridedroptaxi.com`;
 
             <div style="text-align: center; color: #6b7280; font-size: 14px; margin-top: 20px;">
               <p>Enquiry Time: ${currentDateTime}</p>
-              <p>Contact: +91 7305470462</p>
-              <p>www.Fastridedroptaxi.com</p>
+              <p>Contact: +91 </p>
+              <p>www.Onewaydroptaxi.com</p>
             </div>
           </div>
         </div>
@@ -551,7 +551,7 @@ www.happyridedroptaxi.com`;
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Fastridedroptaxi Email Server is running',
+    message: 'Onewaydroptaxi Email Server is running',
     timestamp: new Date().toISOString(),
     emailConfigured: emailConfigured,
     emailUser: process.env.EMAIL_USER || 'NOT SET',
@@ -571,8 +571,8 @@ app.get('/api/test', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Fastridedroptaxi Email Server running on port ${PORT}`);
+  console.log(`🚀 Onewaydroptaxi Email Server running on port ${PORT}`);
   console.log(`🌐 Health check: http://localhost:${PORT}/api/health`);
   console.log(`🧪 Test email: http://localhost:${PORT}/api/test-email`);
-  console.log(`📧 Emails will be sent to: fastridedroptaxi.booking@gmail.com`);
+  console.log(`📧 Emails will be sent to: onewaydroptaxibooking7@gmail.com`);
 });
