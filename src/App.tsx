@@ -23,6 +23,8 @@ import CoimbatoreToChennai from './components/pages/CoimbatoreToChennai';
 import CoimbatoreToBangalore from './components/pages/CoimbatoreToBangalore';
 import CitiesWeCover from './components/CitiesWeCover';
 import PopularRoutes from './components/PopularRoutes';
+import TrustHighlights from "./components/TrustHighlights";
+
 
 
 
@@ -37,6 +39,7 @@ const HomePage = () => (
     <CitiesWeCover />
     <PopularRoutes />
     <Testimonials />
+    <TrustHighlights />
     <Contact />
   </>
 );
