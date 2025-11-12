@@ -6,13 +6,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+91 6382980204',
+      details: '+91 9791401055',
       description: '24/7 booking and support'
     },
     {
       icon: AtSign,
       title: 'Email Us',
-      details: 'fastridedroptaxi.booking@gmail.com',
+      details: 'onewaydroptaxibooking7@gmail.com',
       description: 'For general Enquiries'
     },
     {
