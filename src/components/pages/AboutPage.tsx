@@ -1,10 +1,10 @@
 export default function AboutPage() {
   return (
     <div className="pt-24 px-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-gray-900">About Fast Ride Drop Taxi</h1>
+      <h1 className="text-3xl font-bold mb-4 text-gray-900">About One Way Drop Taxi</h1>
 
       <p className="text-gray-700 leading-relaxed mb-4">
-        Fast Ride Drop Taxi is a trusted taxi service providing <strong>One-Way</strong>, <strong>Round Trip</strong> 
+        One Way Drop Taxi is a trusted taxi service providing <strong>One-Way</strong>, <strong>Round Trip</strong> 
         and <strong>Outstation Taxi</strong> services across Tamil Nadu, Puducherry, and Bengaluru. 
         Our mission is to offer hassle-free travel at fair and transparent prices.
       </p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
       </ul>
 
       <p className="text-gray-700 leading-relaxed mt-6">
-        At Fast Ride Drop Taxi, your travel comfort and safety are our priority. 
+        At One Way Drop Taxi, your travel comfort and safety are our priority. 
         Book your ride today and experience stress-free travel.
       </p>
     </div>
