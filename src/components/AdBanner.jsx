@@ -32,6 +32,11 @@ const AdBanner = () => {
         }
       `}</style>
     </div>
+
+       <p className="text-center text-sm text-gray-600 mt-1">
+        Trusted by 10,000+ happy customers • Transparent Pricing • Verified Drivers
+      </p>
+    </>
   );
 };
 
