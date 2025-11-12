@@ -415,38 +415,41 @@ const Hero = () => {
         </script>
       </Helmet>
       
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-contain sm:bg-cover bg-top bg-no-repeat"
-         style={{
-          backgroundImage: 'url("https://www.onewaydroptaxibooking.com/images/image2.avif")',
-        }}
-        >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-yellow-900/60"></div>
-       </div>
+      <section
+     id="home"
+     className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      >
+    {/* Background Image */}
+    <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: 'url("https://www.yourdomain.com/images/your-banner.jpg")',
+    }}
+    >
+    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+   </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-       <div className="text-white">
-        <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          Book Taxi Anywhere in
-          <span className="text-yellow-300 drop-shadow-lg">
-            TamilNadu, Kerala & Karnataka
-           </span>
-           </h1>
-           <div className="flex flex-col sm:flex-row gap-6">
-              <a href="https://wa.me/916382980204" className="bg-gradient-to-r from-green-500 to-green-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:from-green-600 hover:to-green-700 transition-all transform hover:scale-105 shadow-2xl text-center backdrop-blur-sm">
-                WhatsApp Us
-              </a>
-              <a
-               href="tel:+916382980204"
-               className="bg-yellow-500 border-2 border-yellow-500 text-black px-10 py-4 rounded-xl text-lg font-bold hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-all text-center backdrop-blur-sm"
-              >
-              Call +91 6382980204
-            </a>
-            </div>
-          </div>
+   {/* Content */}
+   <div className="relative z-10 text-center text-white px-4">
+    <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+      Book Taxi Anywhere in <br />
+      <span className="text-yellow-400">TamilNadu, Kerala & Karnataka</span>
+     </h1>
+     <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+      <a
+        href="https://wa.me/916382980204"
+        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold"
+       >
+        WhatsApp Us
+      </a>
+      <a
+        href="tel:+916382980204"
+        className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full text-lg font-semibold"
+        >
+        Call +91 63829 80204
+        </a>
+        </div>
+        </div>
 
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-white/20 max-w-md mx-auto">
             {!showEstimation && !showSuccessMessage && (
