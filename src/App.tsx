@@ -21,6 +21,8 @@ import PricingPage from './components/pages/PricingPage';
 import AboutPage from './components/pages/AboutPage';
 import CoimbatoreToChennai from './components/pages/CoimbatoreToChennai';
 import CoimbatoreToBangalore from './components/pages/CoimbatoreToBangalore';
+import CitiesWeCover from './components/CitiesWeCover';
+
 
 
 
@@ -31,6 +33,7 @@ const HomePage = () => (
     <Fleet />
     <MostBookedRoutes />
     <OutstationDestinations />
+    <CitiesWeCover />
     <Testimonials />
     <Contact />
   </>
