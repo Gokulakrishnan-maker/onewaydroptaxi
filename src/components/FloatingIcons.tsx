@@ -22,19 +22,19 @@ const FloatingIcons = () => {
 
       {/* Phone Icon */}
       <a
-        href="tel:+916382980204"
+        href="tel:+919791401055"
         className="bg-blue-500 hover:bg-blue-600 text-white h-14 w-14 flex items-center justify-center rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 group relative animate-pulse"
         title="Call Us"
       >
         <Phone className="h-7 w-7" />
         <div className="absolute right-16 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          Call +91 6382980204
+          Call +91 9791401055
         </div>
       </a>
 
       {/* WhatsApp Icon */}
       <a
-        href="https://wa.me/916382980204"
+        href="https://wa.me/919791401055"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 hover:bg-green-600 text-white h-14 w-14 flex items-center justify-center rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 group relative animate-pulse"
