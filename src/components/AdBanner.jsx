@@ -7,8 +7,8 @@ const AdBanner = () => {
         🚖 Book Your Ride with <span className="text-yellow-400">Onewaydroptaxi</span> — 
         Reliable • Affordable • 24/7 Service Across Tamil Nadu 🚗 | 
         Safe & Comfortable Cabs | 📞{" "}
-        <a href="tel:+916382980204" className="underline text-yellow-300">
-          Call Now: +91 63829 80204
+        <a href="tel:+919791401055" className="underline text-yellow-300">
+          Call Now: +91 97914 01055
         </a>
       </div>
 
