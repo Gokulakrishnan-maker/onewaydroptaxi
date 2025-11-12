@@ -11,8 +11,8 @@ const FAQ = () => {
       icon: Phone,
       questions: [
         {
-          question: "How can I book a taxi with Fastridedroptaxi?",
-          answer: "You can book through our website, call +91 6382980204, or use our mobile app. We accept advance bookings and immediate pickup requests based on availability."
+          question: "How can I book a taxi with Onewaydroptaxi?",
+          answer: "You can book through our website, call +91 9791401055, or use our mobile app. We accept advance bookings and immediate pickup requests based on availability."
         },
         {
           question: "How far in advance can I book a taxi?",
@@ -69,39 +69,39 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - Fastridedroptaxi | Frequently Asked Questions about Taxi Service</title>
-        <meta name="description" content="Fastridedroptaxi FAQ - Get answers to common questions about taxi booking, pricing, service areas, cancellation policy, and outstation trips across Tamil Nadu." />
-        <meta name="keywords" content="Fastridedroptaxi FAQ, taxi booking questions, Tamil Nadu taxi service, outstation taxi, local taxi, fare calculation, booking help" />
+        <title>FAQ - Onewaydroptaxi | Frequently Asked Questions about Taxi Service</title>
+        <meta name="description" content="Onewaydroptaxi FAQ - Get answers to common questions about taxi booking, pricing, service areas, cancellation policy, and outstation trips across Tamil Nadu." />
+        <meta name="keywords" content="Onewaydroptaxi FAQ, taxi booking questions, Tamil Nadu taxi service, outstation taxi, local taxi, fare calculation, booking help" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.Fastridedroptaxi.com/faq" />
+        <link rel="canonical" href="https://www.onewaydroptaxibooking.com//faq" />
         
         {/* Open Graph tags */}
-        <meta property="og:title" content="FAQ -  Fastridedroptaxi | Taxi Service Questions & Answers" />
-        <meta property="og:description" content="Get answers to common questions about  Fastridedroptaxi booking, pricing, service areas, and policies across Tamil Nadu." />
+        <meta property="og:title" content="FAQ -  Onewaydroptaxi | Taxi Service Questions & Answers" />
+        <meta property="og:description" content="Get answers to common questions about  Onewaydroptaxi booking, pricing, service areas, and policies across Tamil Nadu." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.Fastridedroptaxi.com/faq" />
-        <meta property="og:site_name" content="Fastridedroptaxi" />
+        <meta property="og:url" content="https://www.onewaydroptaxibooking.com//faq" />
+        <meta property="og:site_name" content="Onewaydroptaxi" />
         
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="FAQ -  Fastridedroptaxi" />
-        <meta name="twitter:description" content="Get answers to common questions about Fastridedroptaxi booking and service." />
+        <meta name="twitter:title" content="FAQ -  Onewaydroptaxi" />
+        <meta name="twitter:description" content="Get answers to common questions about Onewaydroptaxi booking and service." />
         
         {/* Structured Data for FAQ */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "name": " Fastridedroptaxi FAQ - Frequently Asked Questions",
-            "description": "Common questions and answers about Fastridedroptaxi booking, pricing, and service",
-            "url": "https://www.Fastridedroptaxi.com/faq",
+            "name": " Onewaydroptaxi FAQ - Frequently Asked Questions",
+            "description": "Common questions and answers about Onewaydroptaxi booking, pricing, and service",
+            "url": "https://www.onewaydroptaxibooking.com//faq",
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How can I book a taxi with  Fastridedroptaxi?",
+                "name": "How can I book a taxi with  Onewaydroptaxi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can book through our website, call +91 73054 70462, or use our mobile app. We accept advance bookings and immediate pickup requests based on availability."
+                  "text": "You can book through our website, call +91 97914 01055, or use our mobile app. We accept advance bookings and immediate pickup requests based on availability."
                 }
               },
               {
@@ -123,9 +123,9 @@ const FAQ = () => {
             ],
             "about": {
               "@type": "Organization",
-              "name": " Fastridedroptaxi",
-              "telephone": "+91-6382980204",
-              "email": "fastridedroptaxi.booking@gmail.com"
+              "name": " Onewaydroptaxi",
+              "telephone": "+91-9791401055",
+              "email": "onewaydroptaxibooking7@gmail.com"
             }
           })}
         </script>
@@ -189,21 +189,21 @@ const FAQ = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:+916382980204" 
+              href="tel:+919791401055" 
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               <Phone className="inline h-4 w-4 mr-2" />
-              Call +91 6382980204
+              Call +91 9791401055
             </a>
             <a 
-              href="https://wa.me/916382980204" 
+              href="https://wa.me/919791401055" 
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center space-x-2"
             >
               <MessageCircle className="h-4 w-4" />
               <span>WhatsApp</span>
             </a>
             <a 
-              href="mailto:fastridedroptaxi.booking@gmail.com" 
+              href="mailto:onewaydroptaxibooking7@gmail.com" 
               className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors flex items-center space-x-2"
             >
               <AtSign className="h-4 w-4" />
