@@ -58,7 +58,7 @@ const Header = () => {
 
       {/* Desktop Call Button */}
       <motion.a
-        href="tel:+916382980204"
+        href="tel:+919791401055"
         className="hidden md:flex items-center bg-yellow-500 text-black font-semibold px-5 py-2.5 rounded-full shadow hover:bg-yellow-600 transition"
         animate={{ scale: [1, 1.08, 1] }}
         transition={{ duration: 1.5, repeat: Infinity }}
@@ -110,7 +110,7 @@ const Header = () => {
           className="flex items-center bg-yellow-500 text-black font-semibold px-3 py-2 rounded-lg mt-2 shadow"
           >
           <Phone className="h-4 w-4 text-black mr-2" />
-          <span className="font-semibold">+91 6382980204</span>
+          <span className="font-semibold">+91 9791401055</span>
         </motion.div>
          
           
