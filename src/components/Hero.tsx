@@ -420,7 +420,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-contain sm:bg-cover bg-top bg-no-repeat"
          style={{
-          backgroundImage: 'url("https://www.fastridedroptaxi.com/images/image2.avif")',
+          backgroundImage: 'url("https://www.onewaydroptaxibooking.com/images/image2.avif")',
         }}
         >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-yellow-900/60"></div>
