@@ -26,7 +26,7 @@ export default function CoimbatoreToBangalore() {
       </p>
 
       <a
-        href="tel:+916382980204"
+        href="tel:+919791401055"
         className="inline-block mt-6 bg-yellow-600 px-6 py-3 rounded-lg text-white font-semibold shadow-md hover:bg-yellow-700"
       >
         Call to Book Now
