@@ -450,6 +450,7 @@ const Hero = () => {
         </a>
         </div>
         </div>
+        
 
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-white/20 max-w-md mx-auto">
             {!showEstimation && !showSuccessMessage && (
@@ -703,8 +704,6 @@ const Hero = () => {
               </div>
             )}
           </div>
-        </div>
-      </div>
       </section>
     </>
   );
