@@ -6,7 +6,7 @@ const OutstationDestinations = () => {
   const destinations = [
     {
       name: 'Chennai',
-      image: 'https://www.onewaydroptaxibooking.com/assets/chennai (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/chennai1.avif',
       distance: '500 km',
       duration: '7-8 hours',
       description: 'Capital city with Marina Beach and IT corridor',
@@ -16,7 +16,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Bangalore',
-      image: 'https://www.onewaydroptaxibooking.com/assets/bangalore.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Bangalore1.avif',
       distance: '360 km',
       duration: '6-7 hours',
       description: 'Silicon Valley of India with gardens and tech hubs',
@@ -26,7 +26,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Ooty',
-      image: 'https://www.onewaydroptaxibooking.com/assets/ooty1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Ooty1 (1).avif',
       distance: '85 km',
       duration: '2.5 hours',
       description: 'Queen of Hill Stations with tea gardens',
@@ -36,7 +36,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Kodaikanal',
-      image: 'https://www.onewaydroptaxibooking.com/assets/kodaikanal1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Kodaikanal11.avif',
       distance: '180 km',
       duration: '4 hours',
       description: 'Princess of Hill Stations with pristine lakes',
@@ -46,7 +46,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Madurai',
-      image: 'https://www.onewaydroptaxibooking.com/assets/madurai1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Madurai1 (1).avif',
       distance: '220 km',
       duration: '4-5 hours',
       description: 'Temple city with Meenakshi Amman Temple',
@@ -56,7 +56,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Kanyakumari',
-      image: 'https://www.onewaydroptaxibooking.com/assets/kanyakumari (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Kanyakumari1_1.avif',
       distance: '450 km',
       duration: '8-9 hours',
       description: 'Southernmost tip with Thiruvalluvar Statue',
@@ -66,7 +66,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Mysore',
-      image: 'https://www.onewaydroptaxibooking.com/assets/mysore.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Mysore1_1.avif',
       distance: '280 km',
       duration: '5-6 hours',
       description: 'City of Palaces with rich heritage',
@@ -76,7 +76,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Munnar',
-      image: 'https://www.onewaydroptaxibooking.com/assets/munnar.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Munnar1 (1).avif',
       distance: '160 km',
       duration: '4 hours',
       description: 'Kerala hill station with spice plantations',
@@ -86,7 +86,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Pondicherry',
-      image: 'https://www.onewaydroptaxibooking.com/assets/pondicherry (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Pondicherry1_1.avif',
       distance: '380 km',
       duration: '6-7 hours',
       description: 'French colonial town with beaches',
@@ -96,7 +96,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Salem',
-      image: 'https://www.onewaydroptaxibooking.com/assets/salem.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Salem1 (1).avif',
       distance: '165 km',
       duration: '3 hours',
       description: 'A vibrant city in Tamil Nadu, known for hills, steel, and mangoes.',
@@ -106,7 +106,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Rameshwaram',
-      image: 'https://www.onewaydroptaxibooking.com/assets/rameshwaram.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Rameshwaram1 (1).avif',
       distance: '380 km',
       duration: '6 hours',
       description: 'Holy island with Ramanathaswamy Temple',
@@ -116,7 +116,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Cochin (Kochi)',
-      image: 'https://www.onewaydroptaxibooking.com/assets/cochin.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/Cochin1_1.avif',
       distance: '165 km',
       duration: '4-5 hours',
       description: 'Queen of Arabian Sea with backwaters',
@@ -126,7 +126,7 @@ const OutstationDestinations = () => {
     },
       {
     name: 'Trichy',
-    image: 'https://www.onewaydroptaxibooking.com/assets/trichy.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/Trichy1.avif',
     category: 'Temple',
     distance: '200 km',
     duration: '5-6 hours',
@@ -137,7 +137,7 @@ const OutstationDestinations = () => {
    },
      {
       name: 'Thanjavur',
-     image: 'https://www.onewaydroptaxibooking.com/assets/Thanjore1.avif',
+     image: 'https://www.onewaydroptaxibooking.com/assets/Thanjavur1.avif',
      category: 'Temple',
      distance: '350 km',
      duration: '6-7 hours',
@@ -148,7 +148,7 @@ const OutstationDestinations = () => {
     },
     {
     name: 'Tirupati',
-    image: 'https://www.onewaydroptaxibooking.com/assets/tirupathi1.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/Tirupati1.avif',
     category: 'Temple',
     distance: '378 km',
     duration: '7 hours',
@@ -159,7 +159,7 @@ const OutstationDestinations = () => {
     },
     {
     name: 'Coimbatore',
-    image: 'https://www.onewaydroptaxibooking.com/assets/coimbatore.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/Coimbatore1.avif',
     category: 'City',
     distance: '210 km',
     duration: '5-6 hours',
