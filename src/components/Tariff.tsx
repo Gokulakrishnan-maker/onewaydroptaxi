@@ -26,15 +26,15 @@ const Tariff = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Heading */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Tariff Details
-          </h2>
-          <p className="text-sm sm:text-lg text-gray-700 max-w-3xl mx-auto font-medium sm:font-semibold">
-            Transparent pricing with no hidden charges. All costs clearly mentioned for your convenience.
-          </p>
-        </div>
-
+       <div className="text-center mb-12 sm:mb-16">
+       <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+       Tariff Details
+       </h2>
+       <p className="text-sm sm:text-lg text-gray-700 max-w-3xl mx-auto font-medium sm:font-semibold">
+       Clear and upfront pricing — no hidden charges. Get the best value with transparent fares for every ride.
+       </p>
+       </div>
+ 
         {/* Tabs */}
         <div className="flex justify-center mb-8 sm:mb-12">
           <div className="bg-white rounded-xl shadow-lg p-1.5 sm:p-2 flex">
