@@ -6,43 +6,43 @@ const TermsOfService = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - Fastridedroptaxi | Taxi Booking Terms & Conditions</title>
-        <meta name="description" content="Fastridedroptaxi Terms of Service - Booking terms, cancellation policy, payment terms, and service agreement for taxi booking across Tamil Nadu. Licensed taxi service." />
-        <meta name="keywords" content="Fastridedroptaxi terms of service, taxi booking terms, cancellation policy, payment terms, Tamil Nadu taxi service, licensed taxi operator" />
+        <title>Terms of Service - Onewaydroptaxi | Taxi Booking Terms & Conditions</title>
+        <meta name="description" content="Onewaydroptaxi Terms of Service - Booking terms, cancellation policy, payment terms, and service agreement for taxi booking across Tamil Nadu. Licensed taxi service." />
+        <meta name="keywords" content="Onewaydroptaxi terms of service, taxi booking terms, cancellation policy, payment terms, Tamil Nadu taxi service, licensed taxi operator" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.Fastridedroptaxi.com/terms-of-service" />
+        <link rel="canonical" href="https://www.onewaydroptaxibooking.com/terms-of-service" />
         
         {/* Open Graph tags */}
-        <meta property="og:title" content="Terms of Service - Fastridedroptaxi | Taxi Service Terms" />
-        <meta property="og:description" content="Fastridedroptaxi Terms of Service - Booking terms, cancellation policy, and service agreement for taxi booking across Tamil Nadu." />
+        <meta property="og:title" content="Terms of Service - Onewaydroptaxi | Taxi Service Terms" />
+        <meta property="og:description" content="Onewaydroptaxi Terms of Service - Booking terms, cancellation policy, and service agreement for taxi booking across Tamil Nadu." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.Fastridedroptaxi.com/terms-of-service" />
-        <meta property="og:site_name" content="Fastridedroptaxi" />
+        <meta property="og:url" content="https://www.onewaydroptaxibooking.com/terms-of-service" />
+        <meta property="og:site_name" content="Onewaydroptaxi" />
         
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Terms of Service - Fastridedroptaxi" />
-        <meta name="twitter:description" content="Fastridedroptaxi Terms of Service - Booking terms and service agreement for taxi booking." />
+        <meta name="twitter:title" content="Terms of Service - Onewaydroptaxi" />
+        <meta name="twitter:description" content="Onewaydroptaxi Terms of Service - Booking terms and service agreement for taxi booking." />
         
         {/* Structured Data for Google */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Terms of Service - Fastridedroptaxi",
-            "description": "Fastridedroptaxi Terms of Service - Booking terms, cancellation policy, and service agreement for taxi booking across Tamil Nadu",
-            "url": "https://Fastridedroptaxi.com/terms-of-service",
+            "name": "Terms of Service - Onewaydroptaxi",
+            "description": "Onewaydroptaxi Terms of Service - Booking terms, cancellation policy, and service agreement for taxi booking across Tamil Nadu",
+            "url": "https://www.onewaydroptaxibooking.com/terms-of-service",
             "isPartOf": {
               "@type": "WebSite",
-              "name": "Fastridedroptaxi",
-              "url": "https://Fastridedroptaxi.com"
+              "name": "Onewaydroptaxi",
+              "url": "https://www.onewaydroptaxibooking.com/"
             },
             "about": {
               "@type": "Organization",
-              "name": "Fastridedroptaxi",
+              "name": "Onewaydroptaxi",
               "description": "Licensed taxi service across Tamil Nadu with transparent pricing",
-              "telephone": "+91-6382980204",
-              "email": "fastridedroptaxi.booking@gmail.com",
+              "telephone": "+91-9791401055",
+              "email": "onewaydroptaxibooking7@gmail.com",
               "areaServed": "Tamil Nadu, India"
             }
           })}
@@ -66,11 +66,11 @@ const TermsOfService = () => {
               </h2>
               <div className="bg-blue-50 p-6 rounded-lg">
                 <p className="text-gray-700 mb-4">
-                  By using Fastridedroptaxi services, you agree to these terms and conditions. 
+                  By using Onewaydroptaxi services, you agree to these terms and conditions. 
                   Our taxi service operates under Tamil Nadu Transport Department regulations.
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Service available 24/7 across Ariyalur and Tamil Nadu</li>
+                  <li>Service available 24/7 across Kallakurichi and Tamil Nadu</li>
                   <li>Licensed drivers with valid permits and insurance</li>
                   <li>Vehicles regularly inspected and maintained</li>
                   <li>Compliance with local transportation laws</li>
@@ -153,7 +153,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Liability & Insurance</h2>
               <div className="bg-yellow-50 p-6 rounded-lg">
                 <p className="text-gray-700 mb-4">
-                  Kovai Drop Taxi maintains comprehensive insurance coverage for all vehicles and operations:
+                  OneWay Drop Taxi maintains comprehensive insurance coverage for all vehicles and operations:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li>Third-party liability insurance as per Motor Vehicle Act</li>
@@ -171,9 +171,9 @@ const TermsOfService = () => {
                   For any legal questions or concerns regarding these terms:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Phone:</strong> +91 6382980204</p>
-                  <p><strong>Email:</strong> fastridedroptaxi.booking@gmail.com</p>
-                  <p><strong>Address:</strong> Ariyalur, Tamil Nadu, India</p>
+                  <p><strong>Phone:</strong> +91 9791401055</p>
+                  <p><strong>Email:</strong> onewaydroptaxibooking7@gmail.com</p>
+                  <p><strong>Address:</strong> Kallakurichi, Tamil Nadu, India</p>
                 </div>
               </div>
             </section>
