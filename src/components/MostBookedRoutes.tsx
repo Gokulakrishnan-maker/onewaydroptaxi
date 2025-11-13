@@ -152,11 +152,11 @@ const MostBookedRoutes = () => {
       <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Most Booked Routes</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Most Booked Taxi Routes</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Popular taxi routes across Tamil Nadu with transparent pricing and professional service.
-          </p>
-        </div>
+          Trusted one-way & round-trip routes across Tamil Nadu — quick booking, fixed fares, and reliable drivers.
+         </p>
+         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {routes.map((route, index) => (
@@ -202,18 +202,18 @@ const MostBookedRoutes = () => {
           <div className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl shadow-xl p-10 text-white">
             <h3 className="text-3xl font-bold mb-4">Book Your Route Today!</h3>
             <p className="text-xl mb-8 opacity-90">
-              Professional drivers, comfortable vehicles, and transparent pricing for all routes across Tamil Nadu
-            </p>
+           Experienced drivers, well-maintained vehicles, and clear upfront pricing for routes across Tamil Nadu.
+           </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a 
-                href="tel:+916382980204" 
+                href="tel:+919791401055" 
                 className="bg-white text-green-600 px-10 py-4 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105"
               >
                 <Phone className="inline h-5 w-5 mr-2" />
-                Call +91 6382980204
+                Call +91 9791401055
               </a>
               <a 
-                href="https://wa.me/916382980204" 
+                href="https://wa.me/919791401055" 
                 className="bg-green-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-green-700 transition-colors shadow-lg transform hover:scale-105 border-2 border-white"
               >
                 <MessageCircle className="inline h-5 w-5 mr-2" />
@@ -317,14 +317,14 @@ const MostBookedRoutes = () => {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="tel:+916382980204" 
+                  href="tel:+919791401055" 
                   className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-bold hover:from-blue-700 hover:to-indigo-700 transition-all text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>Call +91 6382980204</span>
+                  <span>Call +91 9791401055</span>
                 </a>
                 <a 
-                  href="https://wa.me/916382980204" 
+                  href="https://wa.me/919791401055" 
                   className="flex-1 bg-gradient-to-r from-green-600 to-emerald-600 text-white py-4 rounded-xl font-bold hover:from-green-700 hover:to-emerald-700 transition-all text-center flex items-center justify-center space-x-2"
                 >
                   <MessageCircle className="h-5 w-5" />
