@@ -6,7 +6,7 @@ const OutstationDestinations = () => {
   const destinations = [
     {
       name: 'Chennai',
-      image: 'https://www.fastridedroptaxi.com/assets/chennai (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/chennai (1).avif',
       distance: '500 km',
       duration: '7-8 hours',
       description: 'Capital city with Marina Beach and IT corridor',
@@ -16,7 +16,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Bangalore',
-      image: 'https://www.fastridedroptaxi.com/assets/bangalore.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/bangalore.avif',
       distance: '360 km',
       duration: '6-7 hours',
       description: 'Silicon Valley of India with gardens and tech hubs',
@@ -26,7 +26,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Ooty',
-      image: 'https://www.fastridedroptaxi.com/assets/ooty1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/ooty1.avif',
       distance: '85 km',
       duration: '2.5 hours',
       description: 'Queen of Hill Stations with tea gardens',
@@ -36,7 +36,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Kodaikanal',
-      image: 'https://www.fastridedroptaxi.com/assets/kodaikanal1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/kodaikanal1.avif',
       distance: '180 km',
       duration: '4 hours',
       description: 'Princess of Hill Stations with pristine lakes',
@@ -46,7 +46,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Madurai',
-      image: 'https://www.fastridedroptaxi.com/assets/madurai1.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/madurai1.avif',
       distance: '220 km',
       duration: '4-5 hours',
       description: 'Temple city with Meenakshi Amman Temple',
@@ -56,7 +56,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Kanyakumari',
-      image: 'https://www.fastridedroptaxi.com/assets/kanyakumari (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/kanyakumari (1).avif',
       distance: '450 km',
       duration: '8-9 hours',
       description: 'Southernmost tip with Thiruvalluvar Statue',
@@ -66,7 +66,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Mysore',
-      image: 'https://www.fastridedroptaxi.com/assets/mysore.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/mysore.avif',
       distance: '280 km',
       duration: '5-6 hours',
       description: 'City of Palaces with rich heritage',
@@ -76,7 +76,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Munnar',
-      image: 'https://www.fastridedroptaxi.com/assets/munnar.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/munnar.avif',
       distance: '160 km',
       duration: '4 hours',
       description: 'Kerala hill station with spice plantations',
@@ -86,7 +86,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Pondicherry',
-      image: 'https://www.fastridedroptaxi.com/assets/pondicherry (1).avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/pondicherry (1).avif',
       distance: '380 km',
       duration: '6-7 hours',
       description: 'French colonial town with beaches',
@@ -96,7 +96,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Salem',
-      image: 'https://www.fastridedroptaxi.com/assets/salem.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/salem.avif',
       distance: '165 km',
       duration: '3 hours',
       description: 'A vibrant city in Tamil Nadu, known for hills, steel, and mangoes.',
@@ -106,7 +106,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Rameshwaram',
-      image: 'https://www.fastridedroptaxi.com/assets/rameshwaram.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/rameshwaram.avif',
       distance: '380 km',
       duration: '6 hours',
       description: 'Holy island with Ramanathaswamy Temple',
@@ -116,7 +116,7 @@ const OutstationDestinations = () => {
     },
     {
       name: 'Cochin (Kochi)',
-      image: 'https://www.fastridedroptaxi.com/assets/cochin.avif',
+      image: 'https://www.onewaydroptaxibooking.com/assets/cochin.avif',
       distance: '165 km',
       duration: '4-5 hours',
       description: 'Queen of Arabian Sea with backwaters',
@@ -126,7 +126,7 @@ const OutstationDestinations = () => {
     },
       {
     name: 'Trichy',
-    image: 'https://www.fastridedroptaxi.com/assets/trichy.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/trichy.avif',
     category: 'Temple',
     distance: '200 km',
     duration: '5-6 hours',
@@ -137,7 +137,7 @@ const OutstationDestinations = () => {
    },
      {
       name: 'Thanjavur',
-     image: 'https://www.fastridedroptaxi.com/assets/Thanjore1.avif',
+     image: 'https://www.onewaydroptaxibooking.com/assets/Thanjore1.avif',
      category: 'Temple',
      distance: '350 km',
      duration: '6-7 hours',
@@ -148,7 +148,7 @@ const OutstationDestinations = () => {
     },
     {
     name: 'Tirupati',
-    image: 'https://www.fastridedroptaxi.com/assets/tirupathi1.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/tirupathi1.avif',
     category: 'Temple',
     distance: '378 km',
     duration: '7 hours',
@@ -159,7 +159,7 @@ const OutstationDestinations = () => {
     },
     {
     name: 'Coimbatore',
-    image: 'https://www.fastridedroptaxi.com/assets/coimbatore.avif',
+    image: 'https://www.onewaydroptaxibooking.com/assets/coimbatore.avif',
     category: 'City',
     distance: '210 km',
     duration: '5-6 hours',
@@ -175,10 +175,11 @@ const OutstationDestinations = () => {
     <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Outstation Destinations</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Travel across South India with Fastridedroptaxi. Professional drivers, comfortable vehicles, and transparent pricing for all your outstation needs.
-          </p>
+         <h2 className="text-4xl font-bold text-gray-900 mb-4">Outstation Destinations</h2>
+         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+         Explore South India with Onewaydroptaxi — experienced drivers, comfortable vehicles, and clear upfront pricing for all your outstation trips.
+        </p>
+
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,7 +239,7 @@ const OutstationDestinations = () => {
                   </button>
 
                     <a
-                    href="tel:+916382980204"
+                    href="tel:+919791401055"
                     className="flex-1 bg-green-600 text-white py-3 rounded-xl font-bold flex items-center justify-center hover:bg-green-700 transition-all shadow-lg hover:shadow-2xl"
                     >
                     Call Now
@@ -295,7 +296,7 @@ const OutstationDestinations = () => {
 
       <div className="flex flex-col sm:flex-row gap-3">
         <a
-          href="tel:+916382980204"
+          href="tel:+919791401055"
           className="flex-1 bg-green-600 text-white py-3 rounded-xl font-bold flex items-center justify-center hover:bg-green-700 transition-all"
          >
           Call Now
