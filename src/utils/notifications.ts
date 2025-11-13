@@ -118,7 +118,7 @@ export const sendBookingEnquiryEmail = async (booking: BookingEnquiry): Promise<
     
     if (result.success) {
       console.log('✅ Booking enquiry email sent successfully via backend');
-      console.log('📧 Email sent to: fastridedroptaxi.booking@gmail.com');
+      console.log('📧 Email sent to: onewaydroptaxibooking7@gmail.com');
       console.log('📧 Message ID:', result.messageId);
       return true;
     } else {
@@ -173,7 +173,7 @@ export const sendBookingConfirmationEmail = async (booking: BookingEnquiry): Pro
     
     if (result.success) {
       console.log('✅ Booking confirmation email sent successfully via backend');
-      console.log('📧 Email sent to: fastridedroptaxi.booking@gmail.com');
+      console.log('📧 Email sent to: onewaydroptaxibooking7@gmail.com');
       console.log('📧 Message ID:', result.messageId);
       return true;
     } else {
@@ -224,7 +224,7 @@ export const sendContactEmail = async (contactData: {
 
 // Format booking enquiry for WhatsApp message
 export const formatWhatsAppEnquiryMessage = (booking: BookingEnquiry): string => {
-  const message = `🚖 *BOOKING ENQUIRY - Fastridedroptaxi*
+  const message = `🚖 *BOOKING ENQUIRY - Onewaydroptaxi*
  
   📋 *Trip Details:*
 • Booking ID: ${booking.bookingId}
@@ -245,8 +245,8 @@ export const formatWhatsAppEnquiryMessage = (booking: BookingEnquiry): string =>
 
 ⏰ *Enquiry Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
 
-📞 *Contact Support:* +91 6382980204
- 🌐 *Website:* www.Fastridedroptaxi.com
+📞 *Contact Support:* +91 9791401055
+ 🌐 *Website:* www.onewaydroptaxibooking.com
 `;
 
   return encodeURIComponent(message);
@@ -256,7 +256,7 @@ export const formatWhatsAppEnquiryMessage = (booking: BookingEnquiry): string =>
 
 // Format customer enquiry WhatsApp message
 export const formatCustomerWhatsAppEnquiryMessage = (booking: BookingEnquiry): string => {
-  const message = `🚖 *Thank you for your enquiry - Fastridedroptaxi*
+  const message = `🚖 *Thank you for your enquiry - Onewaydroptaxi*
 
 Dear ${booking.customerName}, 
 
@@ -281,11 +281,11 @@ We have received your booking enquiry! 📋
 Our team will contact you shortly to confirm your booking and provide driver details.
 
 📞 *Contact Us:*
-• Phone: +91 6382980204
-• Email: Fastridedroptaxi.booking@gmail.com
-• Website: www.Fastridedroptaxi.com
+• Phone: +91 9791401055
+• Email: onewaydroptaxibooking7@gmail.com
+• Website: www.onewaydroptaxibooking.com
 
-Thank you for choosing Fastridedroptaxi! 🙏
+Thank you for choosing Onewaydroptaxi! 🙏
 
 ⏰ *Enquiry Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
@@ -294,7 +294,7 @@ Thank you for choosing Fastridedroptaxi! 🙏
 
 // Format customer confirmation WhatsApp message
 export const formatCustomerWhatsAppConfirmationMessage = (booking: BookingEnquiry): string => {
-  const message = `🚖 *BOOKING CONFIRMED - Fastridedroptaxi*
+  const message = `🚖 *BOOKING CONFIRMED - Onewaydroptaxi*
 
 Dear ${booking.customerName},
 
@@ -319,11 +319,11 @@ Your booking has been confirmed! ✅
 • Please be ready at the pickup location on time
 
 📞 *24/7 Support:*
-• Phone: +91 6382980204
-• WhatsApp: +91 6382980204
-• Email: Fastridedroptaxi.booking@gmail.com
+• Phone: +91 9791401055
+• WhatsApp: +91 9791401055
+• Email: onewaydroptaxibooking7@gmail.com
 
-Thank you for choosing Fastridedroptaxi! 🙏
+Thank you for choosing Onewaydroptaxi! 🙏
 Safe travels!
 
 ⏰ *Confirmed Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
@@ -332,9 +332,9 @@ Safe travels!
 };
 // Format booking confirmation for WhatsApp message
 export const formatWhatsAppConfirmationMessage = (booking: BookingEnquiry): string => {
-  const message = `🚖 *BOOKING CONFIRMATION - Fastridedroptaxi*
+  const message = `🚖 *BOOKING CONFIRMATION - Onewaydroptaxi*
 
-Thanks for booking Fastridedroptaxi! 🙏
+Thanks for booking Onewaydroptaxi! 🙏
 
 📋 *Trip Details:*
 • Booking ID: ${booking.bookingId}
@@ -352,8 +352,8 @@ Thanks for booking Fastridedroptaxi! 🙏
 • Vehicle: ${booking.vehicleType}
 • For Customer Intimation:Toll Gate, Permit, and Hill Station charges extra.
 
-📞 *Contact:* +91 6382980204
-🌐 *Website:* www.Fastridedroptaxi.com
+📞 *Contact:* +91 9791401055
+🌐 *Website:* www.onewaydroptaxibooking.com
 ${booking.customerEmail ? `• Email: ${booking.customerEmail}` : ''}
 
 ⏰ *Confirmed Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
@@ -363,7 +363,7 @@ ${booking.customerEmail ? `• Email: ${booking.customerEmail}` : ''}
 
 // Format booking enquiry for Telegram
 export const formatTelegramEnquiryMessage = (booking: BookingEnquiry): string => {
-  return `🚖 *BOOKING ENQUIRY - Fastridedroptaxi*
+  return `🚖 *BOOKING ENQUIRY - Onewaydroptaxi*
 
 📋 *Trip Details:*
 • Booking ID: \`${booking.bookingId}\`
@@ -384,12 +384,12 @@ ${booking.customerEmail ? `• Email: ${booking.customerEmail}` : ''}
 
 ⏰ *Enquiry Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
 
-📞 *Contact:* +91 6382980204`;
+📞 *Contact:* +91 9791401055`;
 };
 
 // Format booking confirmation for Telegram
 export const formatTelegramConfirmationMessage = (booking: BookingEnquiry): string => {
-  return `🚖 *BOOKING CONFIRMATION - Fastridedroptaxi*
+  return `🚖 *BOOKING CONFIRMATION - Onewaydroptaxi*
 
 ✅ *CONFIRMED BOOKING*
 
@@ -412,22 +412,22 @@ ${booking.customerEmail ? `• Email: ${booking.customerEmail}` : ''}
 
 ⏰ *Confirmed Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}
 
-📞 *Contact:* +91 6382980204`;
+📞 *Contact:* +91 9791401055`;
 };
 
 // Send WhatsApp enquiry notification
 export const sendWhatsAppEnquiryNotification = async (booking: BookingEnquiry): Promise<void> => {
   const message = formatWhatsAppEnquiryMessage(booking);
-  const whatsappUrl = `https://wa.me/916382980204?text=${message}`;
+  const whatsappUrl = `https://wa.me/919791401055?text=${message}`;
   
   console.log('📱 Sending WhatsApp enquiry notification...');
-  console.log('📱 WhatsApp URL prepared for Fastridedroptaxi team');
+  console.log('📱 WhatsApp URL prepared for Onewaydroptaxi team');
   
-  // Open WhatsApp to send enquiry notification to Fastridedroptaxi team
+  // Open WhatsApp to send enquiry notification to Onewaydroptaxi team
   try {
-    // Open WhatsApp in new tab to send enquiry to Fastridedroptaxi team
+    // Open WhatsApp in new tab to send enquiry to Onewaydroptaxi team
     window.open(whatsappUrl, '_blank');
-    console.log('✅ WhatsApp enquiry notification opened for +91 6382980204');
+    console.log('✅ WhatsApp enquiry notification opened for +91 9791401055');
   } catch (error) {
     console.error('❌ Error sending WhatsApp enquiry notification:', error);
   }
@@ -459,12 +459,12 @@ export const sendCustomerWhatsAppEnquiryNotification = async (booking: BookingEn
 // Send WhatsApp confirmation notification
 export const sendWhatsAppConfirmationNotification = async (booking: BookingEnquiry): Promise<void> => {
   const message = formatWhatsAppConfirmationMessage(booking);
-  const whatsappUrl = `https://wa.me/916382980204?text=${message}`;
+  const whatsappUrl = `https://wa.me/919791401055?text=${message}`;
   
   console.log('📱 Sending WhatsApp confirmation notification...');
-  console.log('📱 WhatsApp URL prepared for Fastridedroptaxi team');
+  console.log('📱 WhatsApp URL prepared for Onewaydroptaxi team');
   
-  // Open WhatsApp to send confirmation notification to Fastridedroptaxi team
+  // Open WhatsApp to send confirmation notification to Onewaydroptaxi team
   try {
     // Open business WhatsApp first
     setTimeout(() => {
@@ -472,7 +472,7 @@ export const sendWhatsAppConfirmationNotification = async (booking: BookingEnqui
       console.log('✅ Business WhatsApp tab opened successfully');
     }, 500);
     
-    console.log('✅ WhatsApp confirmation notification opened for +91 6382980204');
+    console.log('✅ WhatsApp confirmation notification opened for +91 9791401055');
   } catch (error) {
     console.error('❌ Error sending WhatsApp confirmation notification:', error);
   }
@@ -532,14 +532,14 @@ export const sendBookingEnquiryNotifications = async (booking: BookingEnquiry): 
     
     if (emailSent) {
       console.log('✅ Enquiry email sent successfully');
-     console.log('📧 Fastridedroptaxi team notified via email at: Fastridedroptaxi.booking@gmail.com');
+     console.log('📧 Onewaydroptaxi team notified via email at: onewaydroptaxibooking7@gmail.com');
     } else {
       console.log('⚠️ Enquiry email failed');
     }
     
     if (telegramSent) {
       console.log('✅ Telegram enquiry notification sent successfully');
-      console.log('📱 Fastridedroptaxi team notified via Telegram');
+      console.log('📱 Onewaydroptaxi team notified via Telegram');
     } else {
       console.log('⚠️ Telegram enquiry notification failed');
     }
@@ -551,7 +551,7 @@ export const sendBookingEnquiryNotifications = async (booking: BookingEnquiry): 
     // Show status to user
     if (emailSent || telegramSent) {
       console.log('✅ Enquiry notifications sent successfully');
-      console.log('📧📱 Fastridedroptaxi team has been notified via Email, WhatsApp, and Telegram');
+      console.log('📧📱 Onewaydroptaxi team has been notified via Email, WhatsApp, and Telegram');
     } else {
       console.log('⚠️ Some notifications failed, but WhatsApp notification sent');
     }
@@ -586,14 +586,14 @@ export const sendBookingConfirmationNotifications = async (booking: BookingEnqui
     
     if (emailSent) {
       console.log('✅ Confirmation email sent successfully');
-     console.log('📧 Fastridedroptaxi team notified via email at: Fastridedroptaxi.booking@gmail.com');
+     console.log('📧 Onewaydroptaxi team notified via email at: onewaydroptaxibooking7@gmail.com');
     } else {
       console.log('⚠️ Confirmation email failed');
     }
     
     if (telegramSent) {
       console.log('✅ Telegram confirmation notification sent successfully');
-      console.log('📱 Fastridedroptaxi team notified via Telegram');
+      console.log('📱 Onewaydroptaxi team notified via Telegram');
     } else {
       console.log('⚠️ Telegram confirmation notification failed');
     }
@@ -606,7 +606,7 @@ export const sendBookingConfirmationNotifications = async (booking: BookingEnqui
     // Show status to user
     if (emailSent || telegramSent) {
       console.log('✅ Confirmation notifications sent successfully');
-      console.log('📧📱 Fastridedroptaxi team notified via Email, WhatsApp, and Telegram');
+      console.log('📧📱 Onewaydroptaxi team notified via Email, WhatsApp, and Telegram');
     } else {
       console.log('⚠️ Some notifications failed, but WhatsApp notification sent');
     }
