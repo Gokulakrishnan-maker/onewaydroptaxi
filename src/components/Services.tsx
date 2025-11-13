@@ -29,9 +29,9 @@ const Services = () => {
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Fastridedroptaxi?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Onewaydroptaxi?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the difference with Fastridedroptaxi's premium service in Ariyalur. Licensed by Tamil Nadu Transport Department, we provide safe, reliable transportation across the state with local expertise.
+            Experience the difference with Onewaydroptaxi's premium service in Kallakurichi. Licensed by Tamil Nadu Transport Department, we provide safe, reliable transportation across the state with local expertise.
           </p>
         </div>
 
