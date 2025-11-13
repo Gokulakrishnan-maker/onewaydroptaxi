@@ -6,43 +6,43 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - Fastridedroptaxi | Secure Taxi Service in Tamil Nadu</title>
-        <meta name="description" content="Fastridedroptaxi  Privacy Policy - Learn how we protect your personal information, location data, and ensure secure taxi booking across Tamil Nadu. GDPR compliant taxi service." />
-        <meta name="keywords" content="Fastridedroptaxi  privacy policy, data protection, secure taxi booking, Tamil Nadu taxi privacy, GDPR compliance, personal information security" />
+        <title>Privacy Policy - Onewaydroptaxi | Secure Taxi Service in Tamil Nadu</title>
+        <meta name="description" content="Onewaydroptaxi  Privacy Policy - Learn how we protect your personal information, location data, and ensure secure taxi booking across Tamil Nadu. GDPR compliant taxi service." />
+        <meta name="keywords" content="Onewaydroptaxi  privacy policy, data protection, secure taxi booking, Tamil Nadu taxi privacy, GDPR compliance, personal information security" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.Fastridedroptaxi.com/privacy-policy" />
+        <link rel="canonical" href="https://www.onewaydroptaxibooking.com/privacy-policy" />
         
         {/* Open Graph tags */}
-        <meta property="og:title" content="Privacy Policy - Fastridedroptaxi  | Secure Taxi Service" />
-        <meta property="og:description" content="Learn how Fastridedroptaxi  protects your personal information and ensures secure taxi booking across Tamil Nadu." />
+        <meta property="og:title" content="Privacy Policy - Onewaydroptaxi  | Secure Taxi Service" />
+        <meta property="og:description" content="Learn how Onewaydroptaxi  protects your personal information and ensures secure taxi booking across Tamil Nadu." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.Fastridedroptaxi.com/privacy-policy" />
-        <meta property="og:site_name" content="Fastridedroptaxi" />
+        <meta property="og:url" content="https://www.onewaydroptaxibooking.com/privacy-policy" />
+        <meta property="og:site_name" content="Onewaydroptaxi" />
         
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Privacy Policy - Fastridedroptaxi" />
-        <meta name="twitter:description" content="Learn how Fastridedroptaxi  protects your personal information and ensures secure taxi booking." />
+        <meta name="twitter:title" content="Privacy Policy - Onewaydroptaxi" />
+        <meta name="twitter:description" content="Learn how Onewaydroptaxi  protects your personal information and ensures secure taxi booking." />
         
         {/* Structured Data for Google */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Privacy Policy - Fastridedroptaxi",
-            "description": "Fastridedroptaxi  Privacy Policy - Data protection and security information for taxi booking service in Tamil Nadu",
-            "url": "https://www.Fastridedroptaxi.com/privacy-policy",
+            "name": "Privacy Policy - Onewaydroptaxi",
+            "description": "Onewaydroptaxi  Privacy Policy - Data protection and security information for taxi booking service in Tamil Nadu",
+            "url": "https://www.onewaydroptaxibooking.com/privacy-policy",
             "isPartOf": {
               "@type": "WebSite",
-              "name": "Fastridedroptaxi",
-              "url": "https://www.Fastridedroptaxi.com"
+              "name": "Onewaydroptaxi",
+              "url": "https://www.onewaydroptaxibooking.com/"
             },
             "about": {
               "@type": "Organization",
-              "name": "Fastridedroptaxi",
+              "name": "Onewaydroptaxi",
               "description": "Professional taxi service across Tamil Nadu",
-              "telephone": "+91-6382980204",
-              "email": "fastridedroptaxi.booking@gmail.com"
+              "telephone": "+91-9791401055",
+              "email": "onewaydroptaxibooking7@gmail.com"
             }
           })}
         </script>
@@ -150,12 +150,12 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
               <div className="bg-blue-50 p-6 rounded-lg">
                 <p className="text-gray-700 mb-4">
-                  For any privacy-related questions or concerns about Fastridedroptaxi, please contact us:
+                  For any privacy-related questions or concerns about Onewaydroptaxi, please contact us:
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Phone:</strong> +91 6382980204</p>
-                  <p><strong>Email:</strong> fastridedroptaxi.booking@gmail.com</p>
-                  <p><strong>Address:</strong> Ariyalur, Tamil Nadu, India</p>
+                  <p><strong>Phone:</strong> +91 9791401055</p>
+                  <p><strong>Email:</strong> onewaydroptaxibooking7@gmail.com</p>
+                  <p><strong>Address:</strong> Kallakurichi, Tamil Nadu, India</p>
                 </div>
               </div>
             </section>
