@@ -7,135 +7,216 @@ const MostBookedRoutes = () => {
   const [showModal, setShowModal] = useState(false);
 
   const routes = [
-    {
-      id: 1,
-      from: 'Chennai',
-      to: 'Madurai',
-      fare: '₹6,812',
-      distance: '458 km',
-      duration: '7h 30m',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 458,
-        estimatedFuel: 2000,
-        tollCharges: 200
-      }
-    },
-    {
-      id: 2,
-      from: 'Chennai',
-      to: 'Coimbatore',
-      fare: '₹7,400',
-      distance: '500 km',
-      duration: '8h',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 500,
-        estimatedFuel: 2200,
-        tollCharges: 300
-      }
-    },
-    {
-      id: 3,
-      from: 'Madurai',
-      to: 'Chennai',
-      fare: '₹6,812',
-      distance: '458 km',
-      duration: '7h 30m',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 458,
-        estimatedFuel: 2000,
-        tollCharges: 200
-      }
-    },
-    {
-      id: 4,
-      from: 'Chennai',
-      to: 'Salem',
-      fare: '₹5,160',
-      distance: '340 km',
-      duration: '5h 30m',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 340,
-        estimatedFuel: 1500,
-        tollCharges: 150
-      }
-    },
-    {
-      id: 5,
-      from: 'Chennai',
-      to: 'Tiruchirappalli',
-      fare: '₹4,880',
-      distance: '320 km',
-      duration: '5h',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 320,
-        estimatedFuel: 1400,
-        tollCharges: 100
-      }
-    },
-    {
-      id: 6,
-      from: 'Chennai',
-      to: 'Thanjavur',
-      fare: '₹5,300',
-      distance: '350 km',
-      duration: '6h',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 350,
-        estimatedFuel: 1550,
-        tollCharges: 150
-      }
-    },
-    {
-      id: 7,
-      from: 'Madurai',
-      to: 'Coimbatore',
-      fare: '₹3,480',
-      distance: '220 km',
-      duration: '3h 30m',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 220,
-        estimatedFuel: 1000,
-        tollCharges: 80
-      }
-    },
-    {
-      id: 8,
-      from: 'Salem',
-      to: 'Chennai',
-      fare: '₹5,160',
-      distance: '340 km',
-      duration: '5h 30m',
-      breakdown: {
-        baseFare: 400,
-        perKmRate: 14,
-        driverAllowance: 400,
-        totalKm: 340,
-        estimatedFuel: 1500,
-        tollCharges: 150
-      }
+  {
+    id: 9,
+    from: 'Chennai',
+    to: 'Kallakurichi',
+    fare: '₹3,850',
+    distance: '250 km',
+    duration: '4h 15m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 250,
+      estimatedFuel: 1200,
+      tollCharges: 100
     }
-  ];
+  },
+  {
+    id: 10,
+    from: 'Chennai',
+    to: 'Thiruvannamalai',
+    fare: '₹3,100',
+    distance: '200 km',
+    duration: '3h 45m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 200,
+      estimatedFuel: 1000,
+      tollCharges: 80
+    }
+  },
+  {
+    id: 11,
+    from: 'Chennai',
+    to: 'Cuddalore',
+    fare: '₹2,940',
+    distance: '190 km',
+    duration: '3h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 190,
+      estimatedFuel: 900,
+      tollCharges: 70
+    }
+  },
+  {
+    id: 12,
+    from: 'Chennai',
+    to: 'Pondicherry',
+    fare: '₹2,500',
+    distance: '150 km',
+    duration: '3h',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 150,
+      estimatedFuel: 700,
+      tollCharges: 50
+    }
+  },
+  {
+    id: 13,
+    from: 'Chennai',
+    to: 'Vellore',
+    fare: '₹2,220',
+    distance: '130 km',
+    duration: '2h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 130,
+      estimatedFuel: 600,
+      tollCharges: 40
+    }
+  },
+
+    {
+    id: 1,
+    from: 'Chennai',
+    to: 'Madurai',
+    fare: '₹6,812',
+    distance: '458 km',
+    duration: '7h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 458,
+      estimatedFuel: 2000,
+      tollCharges: 200
+    }
+  },
+  {
+    id: 2,
+    from: 'Chennai',
+    to: 'Coimbatore',
+    fare: '₹7,400',
+    distance: '500 km',
+    duration: '8h',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 500,
+      estimatedFuel: 2200,
+      tollCharges: 300
+    }
+  },
+  {
+    id: 3,
+    from: 'Madurai',
+    to: 'Chennai',
+    fare: '₹6,812',
+    distance: '458 km',
+    duration: '7h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 458,
+      estimatedFuel: 2000,
+      tollCharges: 200
+    }
+  },
+  {
+    id: 4,
+    from: 'Chennai',
+    to: 'Salem',
+    fare: '₹5,160',
+    distance: '340 km',
+    duration: '5h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 340,
+      estimatedFuel: 1500,
+      tollCharges: 150
+    }
+  },
+  {
+    id: 5,
+    from: 'Chennai',
+    to: 'Tiruchirappalli',
+    fare: '₹4,880',
+    distance: '320 km',
+    duration: '5h',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 320,
+      estimatedFuel: 1400,
+      tollCharges: 100
+    }
+  },
+  {
+    id: 6,
+    from: 'Chennai',
+    to: 'Thanjavur',
+    fare: '₹5,300',
+    distance: '350 km',
+    duration: '6h',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 350,
+      estimatedFuel: 1550,
+      tollCharges: 150
+    }
+  },
+  {
+    id: 7,
+    from: 'Madurai',
+    to: 'Coimbatore',
+    fare: '₹3,480',
+    distance: '220 km',
+    duration: '3h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 220,
+      estimatedFuel: 1000,
+      tollCharges: 80
+    }
+  },
+  {
+    id: 8,
+    from: 'Salem',
+    to: 'Chennai',
+    fare: '₹5,160',
+    distance: '340 km',
+    duration: '5h 30m',
+    breakdown: {
+      baseFare: 400,
+      perKmRate: 14,
+      driverAllowance: 400,
+      totalKm: 340,
+      estimatedFuel: 1500,
+      tollCharges: 150
+    }
+  }
+];
 
   const handleViewDetails = (route) => {
     setSelectedRoute(route);
