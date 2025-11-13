@@ -309,14 +309,23 @@ Your booking has been confirmed! ✅
 • Time: ${booking.time}
 • Vehicle: ${booking.vehicleType}
 
-💰*Total Fare: ₹${booking.fareEstimate}*
+💰 *Total Fare:* ₹${booking.fareEstimate}
 • Distance: ${booking.tripDistance}
 • Duration: ${booking.tripDuration}
 
 🚗 *What's Next:*
-• Our driver will contact you 15-30 minutes before pickup
+• Our driver will contact you 15–30 minutes before pickup
 • Driver details will be shared via SMS/WhatsApp
 • Please be ready at the pickup location on time
+
+✨ *Why Choose Onewaydroptaxi?*
+✅ One-Way Drop & Round Trip Specialists  
+✅ Service Across Tamil Nadu, Kerala, Karnataka, Andhra Pradesh & Pondicherry  
+✅ Sedan & SUV Available  
+✅ 24×7 Quick Booking & Customer Support  
+✅ GST Bills Available  
+✅ Government Registered Travels  
+✅ GPS-Enabled Vehicles  
 
 📞 *24/7 Support:*
 • Phone: +91 9791401055
@@ -330,6 +339,7 @@ Safe travels!
 
   return encodeURIComponent(message);
 };
+
 // Format booking confirmation for WhatsApp message
 export const formatWhatsAppConfirmationMessage = (booking: BookingEnquiry): string => {
   const message = `🚖 *BOOKING CONFIRMATION - Onewaydroptaxi*
