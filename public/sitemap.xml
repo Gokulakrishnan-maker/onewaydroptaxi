@@ -49,5 +49,11 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://www.onewaydroptaxibooking.com/terms-of-service</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
 
