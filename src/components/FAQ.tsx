@@ -8,7 +8,7 @@ import {
   Clock, 
   MapPin, 
   AtSign,
-  MessageCircle   // ✅ Missing import fixed
+  MessageCircle
 } from "lucide-react";
 
 const FAQ = () => {
@@ -20,22 +20,23 @@ const FAQ = () => {
       icon: Phone,
       questions: [
         {
-          question: "How can I book a taxi with Onewaydroptaxi?",
+          question: "How can I book a taxi with Onewaydroptaxibooking?",
           answer:
-            "You can book through our website, call +91 9791401055, or WhatsApp us. We accept advance bookings and immediate pickups based on availability."
+            "You can book through our website, call +91 9791401055, or WhatsApp us. Advance bookings and quick pickups are available based on driver availability."
         },
         {
           question: "How far in advance can I book a taxi?",
           answer:
-            "You can book up to 30 days in advance for local trips and 15 days for outstation. For guaranteed availability, book 2 hours before."
+            "You can book 30 days in advance for local trips and 15 days for outstation rides. For guaranteed availability, book at least 2 hours before your trip."
         },
         {
           question: "Can I modify or cancel my booking?",
           answer:
-            "Yes, modifications or cancellations are free up to 15 minutes before pickup. After driver dispatch, a ₹50 cancellation charge applies."
+            "Yes. You can modify or cancel your booking up to 15 minutes before pickup time. After the driver is assigned, a ₹50 cancellation charge applies."
         }
       ]
     },
+
     {
       category: "Pricing & Payments",
       icon: Clock,
@@ -43,38 +44,39 @@ const FAQ = () => {
         {
           question: "How is the fare calculated?",
           answer:
-            "Fares are based on distance (₹18–₹35 per km depending on car type), base fare ₹50, AC charges ₹3/km, night surcharge 25% (11 PM–5 AM), and waiting time ₹2/min."
+            "Fare is based on distance (₹18–₹35 per km depending on car type), base fare ₹50, night charges 25% (11 PM – 5 AM), AC charges ₹3/km, and waiting charges ₹2/min."
         },
         {
           question: "What payment methods do you accept?",
           answer:
-            "We accept UPI (GPay, PhonePe, Paytm), cash, credit/debit cards, and net banking. You can pay the driver or online."
+            "We accept UPI (Google Pay, PhonePe, Paytm), cash, credit/debit cards, and net banking. Payments can be made directly to the driver or online."
         },
         {
           question: "Are there any hidden charges?",
           answer:
-            "No, we maintain 100% transparent pricing. Tolls, parking, or outstation driver allowance are communicated clearly before your trip."
+            "No. All charges such as toll, parking, and interstate permits (if needed) are clearly informed before your trip. We follow 100% transparent pricing."
         }
       ]
     },
+
     {
       category: "Service Areas & Routes",
       icon: MapPin,
       questions: [
         {
-          question: "Which areas do you cover in Coimbatore?",
+          question: "Which areas do you cover in Kallakurichi?",
           answer:
-            "We serve all areas: RS Puram, Gandhipuram, Peelamedu, Saibaba Colony, Singanallur, Race Course, Ukkadam, and surrounding suburbs."
+            "We cover all areas in and around Kallakurichi including Sankarapuram, Ulundurpet, Chinnasalem, Thiyagadurgam, Vadalur, Neyveli, Virudhachalam, Pennadam, and nearby rural villages."
         },
         {
           question: "Do you provide outstation services?",
           answer:
-            "Yes, we provide outstation trips to Chennai, Bangalore, Madurai, Ooty, Kodaikanal, Kochi, and more. Driver allowance applies for multi-day trips."
+            "Yes! We provide outstation taxi services from Kallakurichi to Chennai, Pondicherry, Trichy, Salem, Coimbatore, Bangalore, Madurai, Thanjavur, Chidambaram, and all major cities in Tamil Nadu and Karnataka."
         },
         {
           question: "Do you offer airport transfers?",
           answer:
-            "Yes, 24/7 Coimbatore Airport pickup and drop available. We track your flight for on-time arrivals."
+            "Yes. We provide 24/7 airport taxi service from Kallakurichi to Chennai Airport, Trichy Airport, Pondicherry Airport, and Salem Airport. Flight tracking is included for arrival pickups."
         }
       ]
     }
@@ -90,27 +92,26 @@ const FAQ = () => {
         <title>FAQ - Onewaydroptaxibooking | Taxi Service Questions</title>
         <meta
           name="description"
-          content="FAQ for Onewaydroptaxibooking: Taxi booking, pricing, outstation service, Coimbatore routes, cancellation policy, and more."
+          content="FAQ for Onewaydroptaxibooking: Booking help, pricing details, Kallakurichi taxi service areas, outstation routes, and cancellation policy."
         />
-        <link rel="canonical" href="https://www.onewaydroptaxibooking.com/faq" /> 
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.onewaydroptaxibooking.com/faq" />
 
         {/* Open Graph */}
         <meta property="og:title" content="FAQ - Onewaydroptaxibooking" />
-        <meta property="og:description" content="Frequently asked questions about our taxi booking and pricing." />
+        <meta property="og:description" content="Frequently asked questions about taxi booking, pricing, and routes from Kallakurichi." />
         <meta property="og:url" content="https://www.onewaydroptaxibooking.com/faq" />
-        <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
 
-        {/* Structured Data */}
+        {/* FAQ Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": faqs.flatMap(cat =>
-              cat.questions.map(q => ({
+            "mainEntity": faqs.flatMap((cat) =>
+              cat.questions.map((q) => ({
                 "@type": "Question",
                 "name": q.question,
                 "acceptedAnswer": { "@type": "Answer", "text": q.answer }
@@ -125,13 +126,13 @@ const FAQ = () => {
           <div className="text-center mb-16">
             <HelpCircle className="h-16 w-16 text-blue-600 mx-auto mb-4" />
             <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
-            <p className="text-lg text-gray-600">Find answers to all taxi booking questions</p>
+            <p className="text-lg text-gray-600">Find answers to all your taxi service questions</p>
           </div>
 
           {/* FAQ LIST */}
           <div className="space-y-8">
             {faqs.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div key={categoryIndex} className="bg-white rounded-xl shadow-lg">
                 <div className="bg-blue-600 text-white p-6 flex items-center gap-3">
                   <category.icon className="h-6 w-6" />
                   <h2 className="text-xl font-bold">{category.category}</h2>
@@ -144,7 +145,7 @@ const FAQ = () => {
                       <div key={faqIndex} className="border rounded-lg">
                         <button
                           onClick={() => toggleFAQ(id)}
-                          className="w-full p-4 text-left flex justify-between"
+                          className="w-full p-4 flex justify-between text-left"
                         >
                           <span className="font-semibold">{faq.question}</span>
                           {openFAQ === id ? <ChevronUp /> : <ChevronDown />}
@@ -164,18 +165,27 @@ const FAQ = () => {
           {/* CONTACT BOX */}
           <div className="mt-12 bg-orange-50 border rounded-xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Still Have Questions?</h3>
-            <p className="mb-6">Our support team is available 24/7 to help you.</p>
+            <p className="text-gray-700 mb-6">Our support team is available 24/7 to assist you.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919791401055" className="bg-blue-600 text-white px-6 py-3 rounded-lg">
+              <a
+                href="tel:+919791401055"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg"
+              >
                 <Phone className="inline h-4 w-4 mr-2" /> Call +91 9791401055
               </a>
 
-              <a href="https://wa.me/919791401055" className="bg-green-600 text-white px-6 py-3 rounded-lg flex items-center gap-2">
+              <a
+                href="https://wa.me/919791401055"
+                className="bg-green-600 text-white px-6 py-3 rounded-lg flex items-center gap-2"
+              >
                 <MessageCircle className="h-4 w-4" /> WhatsApp
               </a>
 
-              <a href="mailto:onewaydroptaxibooking7@gmail.com" className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg flex items-center gap-2">
+              <a
+                href="mailto:onewaydroptaxibooking7@gmail.com"
+                className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg flex items-center gap-2"
+              >
                 <AtSign className="h-4 w-4" /> Email Support
               </a>
             </div>
